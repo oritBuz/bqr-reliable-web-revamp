@@ -2,30 +2,41 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const ServicesSection = () => {
-  const services = [
+  const products = [
     {
-      title: "Electronic Design Automation",
-      description: "Advanced EDA tools for comprehensive electronic system design and optimization with integrated reliability analysis.",
-      features: ["Circuit Simulation", "Design Rule Checking", "Automated Routing", "Component Libraries"],
-      badge: "Core Platform"
+      title: "Synthelyzer™",
+      subtitle: "ECAD Plugin",
+      description: "Component De-rating & MTBF Prediction Plugin for Single PCB Design",
+      details: "Stress De-rating Automation, Realistic MTBF Prediction, and Streamlining of Design Cycles for More Robust PCB Design.",
+      icon: "🔧"
     },
     {
-      title: "MTBF Prediction Software",
-      description: "Industry-leading mean time between failures analysis using advanced statistical models and real-world data.",
-      features: ["Statistical Analysis", "Failure Rate Models", "Reliability Prediction", "Risk Assessment"],
-      badge: "Predictive Analytics"
+      title: "fiXtress®",
+      subtitle: "AI-Powered Analysis",
+      description: "Automated Derating, Advanced Thermal Analysis, and Accurate MTBF Prediction",
+      details: "For Single and Multi-PCB Designs Powered by Patented AI Technology. Optimize PCB Design & Predict Component Lifespan with AI-powered De-rating, MTBF, Thermal & Stress Analysis.",
+      icon: "🤖"
     },
     {
-      title: "PCB Reliability Analysis",
-      description: "Comprehensive printed circuit board reliability testing and validation with thermal and stress analysis.",
-      features: ["Thermal Analysis", "Stress Testing", "Component Aging", "Environmental Factors"],
-      badge: "Hardware Validation"
+      title: "CircuitHawk™",
+      subtitle: "Schematic Analysis",
+      description: "Automated, AI-Powered Schematic Design Error-Detection for Multi-PCB Systems",
+      details: "Precise Electrical Stress Simulation for Design Optimization, Detection of Errors in Schematic Designs, and Identification of Over-Stressed Components.",
+      icon: "🦅"
     },
     {
-      title: "Automated Design Verification",
-      description: "Intelligent automation for design verification workflows, reducing manual testing and improving accuracy.",
-      features: ["Automated Testing", "Design Rules", "Compliance Checking", "Report Generation"],
-      badge: "Automation"
+      title: "CARE®",
+      subtitle: "System Reliability",
+      description: "Integrated Reliability, Availability, Maintainability & Safety Analyses",
+      details: "For Early-Stage Design of Electronic Systems. Identify & Mitigate Design Risks with FMEA, Fault Trees, RBDs & Testability Analysis.",
+      icon: "🛡️"
+    },
+    {
+      title: "apmOptimizer®",
+      subtitle: "Maintenance Optimization",
+      description: "Maintenance & Logistics Optimization for Intricate Systems",
+      details: "Optimize Maintenance & Costs with Life Cycle, Repair, Parts, Scheduling, P4M & Performance Analysis.",
+      icon: "⚙️"
     }
   ];
 
@@ -34,51 +45,46 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <Badge variant="outline" className="text-primary font-medium">
-            Our Solutions
+            Our Product Suite
           </Badge>
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
-            Comprehensive Reliability Engineering
+            Automated Electronic Design Analysis and <span className="text-primary">Optimization Software Solutions</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From concept to production, our integrated suite of tools ensures your electronic designs 
-            meet the highest reliability standards in the industry.
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            Comprehensive suite of AI-powered software solutions for electronic design optimization, 
+            reliability prediction, and automated verification. Streamline your design process with our innovative tools.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-medium transition-all duration-300 bg-card border-border">
-              <CardContent className="p-8">
-                <div className="space-y-6">
-                  <div className="flex items-start justify-between">
-                    <div className="space-y-2">
-                      <Badge variant="secondary" className="text-primary font-medium">
-                        {service.badge}
-                      </Badge>
-                      <h3 className="text-2xl font-semibold text-foreground group-hover:text-primary transition-colors">
-                        {service.title}
-                      </h3>
-                    </div>
-                    <div className="w-12 h-12 bg-gradient-to-br from-tech-blue to-tech-blue-dark rounded-lg flex items-center justify-center">
-                      <div className="w-6 h-6 bg-background rounded"></div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {products.map((product, index) => (
+            <Card key={index} className="bg-card/80 backdrop-blur-sm border shadow-medium hover:shadow-strong transition-all duration-300 group hover:scale-105">
+              <CardContent className="p-8 space-y-6">
+                <div className="text-center space-y-4">
+                  <div className="text-4xl mb-4">{product.icon}</div>
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                      {product.title}
+                    </h3>
+                    <div className="text-sm font-medium text-accent">
+                      {product.subtitle}
                     </div>
                   </div>
-                  
-                  <p className="text-muted-foreground leading-relaxed">
-                    {service.description}
+                </div>
+                
+                <div className="space-y-4 text-center">
+                  <p className="text-lg font-medium text-foreground leading-relaxed">
+                    {product.description}
                   </p>
-                  
-                  <div className="space-y-3">
-                    <h4 className="font-medium text-foreground">Key Features:</h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      {service.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center space-x-2 text-sm">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                          <span className="text-muted-foreground">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {product.details}
+                  </p>
+                </div>
+                
+                <div className="flex justify-center">
+                  <button className="px-6 py-2 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-lg hover:shadow-medium transition-all duration-300 font-medium">
+                    Learn More
+                  </button>
                 </div>
               </CardContent>
             </Card>
