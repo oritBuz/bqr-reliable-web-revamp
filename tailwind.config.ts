@@ -57,6 +57,11 @@ export default {
 					light: 'hsl(var(--tech-blue-light))',
 					dark: 'hsl(var(--tech-blue-dark))'
 				},
+				'deep-purple': {
+					DEFAULT: 'hsl(var(--deep-purple))',
+					light: 'hsl(var(--deep-purple-light))',
+					dark: 'hsl(var(--deep-purple-dark))'
+				},
 				'professional-gray': 'hsl(var(--professional-gray))',
 				'light-gray': 'hsl(var(--light-gray))',
 				sidebar: {

@@ -32,7 +32,7 @@ const HeroSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg px-8 py-6">
-                Start Free Trial
+                Learn More
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
                 View Demo
@@ -42,11 +42,11 @@ const HeroSection = () => {
             <div className="flex items-center space-x-8 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>No Credit Card Required</span>
+                <span>Industry-Leading Solutions</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>Free 30-Day Trial</span>
+                <span>Expert Support</span>
               </div>
             </div>
           </div>
