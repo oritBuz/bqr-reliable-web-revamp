@@ -20,22 +20,20 @@ const HeroSection = () => {
                 Industry-Leading Reliability Engineering Software
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Advanced{" "}
-                <span className="text-primary">Reliability Engineering</span>{" "}
-                Software Solutions
+                Design Electronics for Quality, Reliability, and Safety — Right the First Time
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Comprehensive electronic design automation and MTBF prediction software for 
-                PCB reliability analysis and automated design verification. Trusted by engineers worldwide.
+                Stop chasing failures after production. BQR's intelligent design analysis tools catch critical issues early, validate reliability upfront, and help you build robust, error-free electronics from day one.
+                Reduce costly redesigns, accelerate time to market, and deliver products your customers can trust — with confidence and peace of mind.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg px-8 py-6">
-                Learn More
+                Contact Us
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                View Demo
+                Explore Our Solutions
               </Button>
             </div>
             

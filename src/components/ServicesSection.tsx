@@ -48,7 +48,7 @@ const ServicesSection = () => {
             Our Product Suite
           </Badge>
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
-            Automated Electronic Design Analysis and <span className="text-primary">Optimization Software Solutions</span>
+            Our <span className="text-primary">Product Suite</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Comprehensive suite of AI-powered software solutions for electronic design optimization, 
