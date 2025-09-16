@@ -17,10 +17,10 @@ const ClientLogosSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-light-gray/30">
+    <section className="py-20 bg-tech-gray">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-6 mb-16">
-          <Badge variant="outline" className="text-primary font-medium">
+          <Badge variant="outline" className="text-primary font-medium border-primary/30">
             Our Clients
           </Badge>
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
@@ -32,7 +32,7 @@ const ClientLogosSection = () => {
           {clients.map((client, index) => (
             <div 
               key={index}
-              className="group flex items-center justify-center p-6 bg-card/60 backdrop-blur-sm border border-border/50 rounded-lg hover:shadow-medium hover:scale-105 transition-all duration-300 min-h-[80px]"
+              className="group flex items-center justify-center p-6 bg-gradient-card border border-border rounded-lg hover:shadow-strong hover:shadow-green/20 hover:scale-105 transition-all duration-300 min-h-[80px]"
             >
               <span className="text-lg font-semibold text-muted-foreground group-hover:text-primary transition-colors text-center">
                 {client}

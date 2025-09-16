@@ -41,16 +41,16 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-light-gray/50">
+    <section className="py-20 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
-          <Badge variant="outline" className="text-primary font-medium">
+          <Badge variant="outline" className="text-primary font-medium border-primary/30">
             Our Product Suite
           </Badge>
-          <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white">
             Our <span className="text-primary">Product Suite</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-xl text-white/80 max-w-4xl mx-auto">
             Comprehensive suite of AI-powered software solutions for electronic design optimization, 
             reliability prediction, and automated verification. Streamline your design process with our innovative tools.
           </p>
@@ -58,31 +58,31 @@ const ServicesSection = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {products.map((product, index) => (
-            <Card key={index} className="bg-card/80 backdrop-blur-sm border shadow-medium hover:shadow-strong transition-all duration-300 group hover:scale-105">
+            <Card key={index} className="bg-gradient-card border border-border shadow-medium shadow-green/10 hover:shadow-strong hover:shadow-green/20 transition-all duration-300 group hover:scale-105">
               <CardContent className="p-8 space-y-6">
                 <div className="text-center space-y-4">
                   <div className="text-4xl mb-4">{product.icon}</div>
                   <div className="space-y-2">
-                    <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">
                       {product.title}
                     </h3>
-                    <div className="text-sm font-medium text-accent">
+                    <div className="text-sm font-medium text-primary">
                       {product.subtitle}
                     </div>
                   </div>
                 </div>
                 
                 <div className="space-y-4 text-center">
-                  <p className="text-lg font-medium text-foreground leading-relaxed">
+                  <p className="text-lg font-medium text-white/90 leading-relaxed">
                     {product.description}
                   </p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-white/70 leading-relaxed">
                     {product.details}
                   </p>
                 </div>
                 
                 <div className="flex justify-center">
-                  <button className="px-6 py-2 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-lg hover:shadow-medium transition-all duration-300 font-medium">
+                  <button className="px-6 py-2 bg-gradient-to-r from-primary to-bright-green-dark text-primary-foreground rounded-lg hover:shadow-medium shadow-green transition-all duration-300 font-medium">
                     Learn More
                   </button>
                 </div>

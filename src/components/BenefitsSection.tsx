@@ -39,31 +39,31 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-tech-dark">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <Badge variant="outline" className="text-primary font-medium">
+              <Badge variant="outline" className="text-primary font-medium border-primary/30">
                 Why Choose BQR
               </Badge>
-              <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
+              <h2 className="text-3xl lg:text-5xl font-bold text-white">
                 Drive Innovation with 
                 <span className="text-primary"> Reliable Engineering</span>
               </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-white/80 leading-relaxed">
                 Our comprehensive platform combines cutting-edge technology with proven methodologies 
                 to deliver unmatched reliability engineering solutions for the modern electronics industry.
               </p>
             </div>
             
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-foreground">Platform Features:</h3>
+              <h3 className="text-lg font-semibold text-white">Platform Features:</h3>
               <div className="grid grid-cols-1 gap-3">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-muted-foreground">{feature}</span>
+                    <span className="text-white/70">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -72,15 +72,15 @@ const BenefitsSection = () => {
           
           <div className="grid grid-cols-2 gap-6">
             {benefits.map((benefit, index) => (
-              <Card key={index} className="bg-gradient-to-br from-card to-light-gray border-border hover:shadow-medium transition-all duration-300">
+              <Card key={index} className="bg-gradient-card border-border hover:shadow-medium hover:shadow-green/20 transition-all duration-300">
                 <CardContent className="p-6 text-center space-y-4">
                   <div className="space-y-2">
-                    <div className="text-4xl font-bold text-primary">{benefit.metric}</div>
-                    <div className="text-sm text-muted-foreground font-medium">{benefit.metricLabel}</div>
+                    <div className="text-4xl font-bold text-primary drop-shadow-lg shadow-green">{benefit.metric}</div>
+                    <div className="text-sm text-white/70 font-medium">{benefit.metricLabel}</div>
                   </div>
                   <div className="space-y-2">
-                    <h4 className="font-semibold text-foreground">{benefit.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <h4 className="font-semibold text-white">{benefit.title}</h4>
+                    <p className="text-sm text-white/70 leading-relaxed">
                       {benefit.description}
                     </p>
                   </div>
