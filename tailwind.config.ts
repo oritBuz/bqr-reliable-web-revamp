@@ -52,18 +52,19 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'tech-blue': {
-					DEFAULT: 'hsl(var(--tech-blue))',
-					light: 'hsl(var(--tech-blue-light))',
-					dark: 'hsl(var(--tech-blue-dark))'
-				},
-				'deep-purple': {
-					DEFAULT: 'hsl(var(--deep-purple))',
-					light: 'hsl(var(--deep-purple-light))',
-					dark: 'hsl(var(--deep-purple-dark))'
-				},
-				'professional-gray': 'hsl(var(--professional-gray))',
-				'light-gray': 'hsl(var(--light-gray))',
+				'tech-dark': 'hsl(var(--tech-dark))',
+				'tech-darker': 'hsl(var(--tech-darker))',
+				'tech-gray': 'hsl(var(--tech-gray))',
+				'tech-gray-light': 'hsl(var(--tech-gray-light))',
+				'tech-gray-lighter': 'hsl(var(--tech-gray-lighter))',
+				'tech-blue-dark': 'hsl(var(--tech-blue-dark))',
+				'tech-blue-medium': 'hsl(var(--tech-blue-medium))',
+				'tech-slate': 'hsl(var(--tech-slate))',
+				'tech-charcoal': 'hsl(var(--tech-charcoal))',
+				'bright-green': 'hsl(var(--bright-green))',
+				'bright-green-dark': 'hsl(var(--bright-green-dark))',
+				'circuit-overlay': 'hsl(var(--circuit-overlay))',
+				'green': 'hsl(var(--bright-green))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -74,6 +75,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-section': 'var(--gradient-section)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-blue-dark': 'var(--gradient-blue-dark)',
+				'gradient-subtle-dark': 'var(--gradient-subtle-dark)',
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'medium': 'var(--shadow-medium)',
+				'strong': 'var(--shadow-strong)',
+				'green': 'var(--shadow-green)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
