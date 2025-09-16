@@ -10,13 +10,13 @@ const PartnersSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-tech-charcoal">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-6 mb-16">
-          <Badge variant="outline" className="text-primary font-medium">
+          <Badge variant="outline" className="text-primary font-medium border-primary/30">
             Strategic Partnerships
           </Badge>
-          <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white">
             Proud Partner with <span className="text-primary">Industry Leaders</span>
           </h2>
         </div>
@@ -25,9 +25,9 @@ const PartnersSection = () => {
           {partners.map((partner, index) => (
             <div 
               key={index}
-              className="group flex items-center justify-center p-6 bg-gradient-to-br from-card to-light-gray border border-border rounded-lg hover:shadow-medium hover:scale-110 transition-all duration-300 min-w-[140px]"
+              className="group flex items-center justify-center p-6 bg-gradient-card border border-border/30 rounded-lg hover:shadow-medium hover:shadow-green/20 hover:scale-110 transition-all duration-300 min-w-[140px]"
             >
-              <span className="text-xl font-bold text-muted-foreground group-hover:text-primary transition-colors">
+              <span className="text-xl font-bold text-white/80 group-hover:text-primary transition-colors">
                 {partner}
               </span>
             </div>

@@ -9,16 +9,16 @@ const IndustriesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-tech-blue-medium">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-6 mb-16">
-          <Badge variant="outline" className="text-primary font-medium">
+          <Badge variant="outline" className="text-primary font-medium border-primary/30">
             Industry Expertise
           </Badge>
-          <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white">
             Cross-Industry <span className="text-primary">Excellence</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+          <p className="text-xl text-white/80 leading-relaxed max-w-4xl mx-auto">
             We collaborate with a diverse range of industries, offering tailored solutions to meet the unique challenges and requirements of each sector, including:
           </p>
         </div>
@@ -28,9 +28,9 @@ const IndustriesSection = () => {
             {industries.map((industry, index) => (
               <div 
                 key={index}
-                className="group p-4 text-center bg-gradient-to-br from-card to-light-gray border border-border rounded-lg hover:shadow-medium hover:scale-105 transition-all duration-300"
+                className="group p-4 text-center bg-tech-slate/50 border border-border/20 rounded-lg hover:shadow-medium hover:shadow-green/20 hover:scale-105 transition-all duration-300"
               >
-                <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
+                <span className="text-sm font-medium text-white/80 group-hover:text-primary transition-colors">
                   {industry}
                 </span>
               </div>

@@ -41,7 +41,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-section">
+    <section className="py-20 bg-gradient-blue-dark">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <Badge variant="outline" className="text-primary font-medium border-primary/30">

@@ -31,29 +31,29 @@ const NumbersSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-tech-blue/5 to-deep-purple/5">
+    <section className="py-20 bg-tech-gray">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-6 mb-16">
-          <Badge variant="outline" className="text-primary font-medium">
+          <Badge variant="outline" className="text-primary font-medium border-primary/30">
             Our Track Record
           </Badge>
-          <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white">
             BQR in <span className="text-primary">Numbers</span>
           </h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
           {metrics.map((metric, index) => (
-            <Card key={index} className="bg-card/80 backdrop-blur-sm border shadow-medium hover:shadow-strong transition-all duration-300 hover:scale-105">
+            <Card key={index} className="bg-gradient-card border border-border/30 shadow-medium shadow-green/10 hover:shadow-strong hover:shadow-green/20 transition-all duration-300 hover:scale-105">
               <CardContent className="p-6 text-center space-y-4">
-                <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent">
+                <div className="text-4xl lg:text-5xl font-bold text-primary drop-shadow-lg">
                   {metric.number}
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground text-sm">
+                  <div className="font-semibold text-white text-sm">
                     {metric.label}
                   </div>
-                  <div className="text-xs text-muted-foreground mt-1">
+                  <div className="text-xs text-white/70 mt-1">
                     {metric.description}
                   </div>
                 </div>
