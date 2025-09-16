@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section className="relative min-h-[600px] flex items-center bg-gradient-hero">
       <div className="absolute inset-0 bg-gradient-to-r from-tech-darker/95 to-tech-dark/85 z-10"></div>
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-15"
+        className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: `url(${circuitHeroImage})` }}
       ></div>
       
