@@ -20,9 +20,8 @@ const HeroSection = () => {
                 Industry-Leading Reliability Engineering Software
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
-                Design Electronics for{" "}
-                <span className="text-primary drop-shadow-lg">Quality, Reliability, and Safety</span>
-                {" "}— Right the First Time
+                Reliability Engineering for Electronics:{" "}
+                <span className="text-primary drop-shadow-lg">Smarter Design, Stronger Systems</span>
               </h1>
               <p className="text-xl text-white/90 leading-relaxed max-w-2xl">
                 Stop chasing failures after production. BQR's intelligent design analysis tools catch critical issues early, validate reliability upfront, and help you build robust, error-free electronics from day one.
