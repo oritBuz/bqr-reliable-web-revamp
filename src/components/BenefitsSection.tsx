@@ -39,7 +39,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-tech-dark">
+    <section className="py-20 bg-gradient-blue-dark">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
