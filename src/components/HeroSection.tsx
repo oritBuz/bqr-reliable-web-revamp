@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import heroImage from "@/assets/hero-bg.jpg";
+import circuitHeroImage from "@/assets/circuit-hero-bg.jpg";
 
 const HeroSection = () => {
   return (
@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-tech-darker/90 to-tech-dark/70 z-10"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${circuitHeroImage})` }}
       ></div>
       
       <div className="container mx-auto px-4 py-20 relative z-20">
