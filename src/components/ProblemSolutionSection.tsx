@@ -40,45 +40,50 @@ const ProblemSolutionSection = () => {
           </p>
         </div>
 
-        {/* Split Comparison Table */}
+        {/* Unified Comparison Table */}
         <div className="max-w-6xl mx-auto mb-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Problems Column */}
-            <Card className="border-destructive/30 bg-destructive/5">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-2 mb-6">
-                  <AlertCircle className="w-6 h-6 text-destructive" />
-                  <h3 className="text-xl font-bold">The Hidden Problems</h3>
-                </div>
-                <div className="space-y-4">
-                  {comparisons.map((item, index) => (
-                    <div key={index} className="flex items-start gap-3 p-3 rounded-lg bg-background/50">
-                      <div className="w-1 h-full bg-destructive rounded-full mt-1 flex-shrink-0"></div>
-                      <p className="text-sm">{item.problem}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Solutions Column */}
-            <Card className="border-primary/30 bg-primary/5">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-2 mb-6">
-                  <CheckCircle2 className="w-6 h-6 text-primary" />
-                  <h3 className="text-xl font-bold">BQR's Solution</h3>
-                </div>
-                <div className="space-y-4">
-                  {comparisons.map((item, index) => (
-                    <div key={index} className="flex items-start gap-3 p-3 rounded-lg bg-background/50">
-                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <p className="text-sm">{item.solution}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          <Card className="overflow-hidden">
+            <CardContent className="p-0">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b">
+                      <th className="p-4 text-left bg-destructive/10 border-r">
+                        <div className="flex items-center gap-2">
+                          <AlertCircle className="w-5 h-5 text-destructive" />
+                          <span className="font-bold text-base">The Hidden Problems</span>
+                        </div>
+                      </th>
+                      <th className="p-4 text-left bg-primary/10">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle2 className="w-5 h-5 text-primary" />
+                          <span className="font-bold text-base">BQR's Solution</span>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {comparisons.map((item, index) => (
+                      <tr key={index} className="border-b last:border-b-0 hover:bg-muted/20 transition-colors">
+                        <td className="p-4 border-r bg-destructive/5">
+                          <div className="flex items-start gap-3">
+                            <div className="w-1.5 h-1.5 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-sm">{item.problem}</p>
+                          </div>
+                        </td>
+                        <td className="p-4 bg-primary/5">
+                          <div className="flex items-start gap-3">
+                            <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                            <p className="text-sm">{item.solution}</p>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Visual Statistic Callout */}
