@@ -26,120 +26,104 @@ import Footer from "@/components/Footer";
 
 const SynthelyzerPage = () => {
   const keyFeatures = [
-    { text: "Performs detailed electrical stress derating analysis for components", icon: Activity },
-    { text: "Utilizes cutting-edge AI technology for robust design solutions", icon: Cpu },
-    { text: "Seamless integration with Altium, OrCAD, and Siemens EDA", icon: Link2 },
-    { text: "Automated circuit stress calculators to accelerate design", icon: Gauge },
-    { text: "Provides thermal resistance data for 3D thermal simulations", icon: BarChart3 },
-    { text: "Identifies EOS violations with Pareto analysis and detailed reports", icon: FileText },
-    { text: "Recommends design adjustments to resolve overstress issues", icon: Lightbulb },
-    { text: "Implements derating guidelines for optimal performance", icon: Settings },
-    { text: "Automates FMEA analysis to assess PCB-level impacts", icon: Database },
-    { text: "Predicts MTBF based on Telcordia 3 and Mil-217-F2 standards", icon: TrendingUp },
-    { text: "Features AI-driven PCB components library", icon: Cpu },
-    { text: "Integrates reliability data across all RAMS analyses", icon: Layers }
+    { text: "Performs automatic electrical stress and derating analysis for every component", icon: Activity },
+    { text: "Predicts MTBF using all standards available in the market", icon: TrendingUp },
+    { text: "Detects EOS (Electrical Overstress) and provides design recommendations to prevent failures", icon: Shield },
+    { text: "Integrates seamlessly with Altium®, OrCAD®, and Siemens-Xpedition for in‑workflow analysis", icon: Link2 },
+    { text: "Generates stress and thermal metrics that feed directly into Thermal analysis tools, fiXtress® and CARE RAMS analyses", icon: BarChart3 },
+    { text: "Provides an AI‑based component library with automatic parameter completion and components derating curve management", icon: Cpu },
+    { text: "Maintains full traceability between schematic revisions and reliability analyses", icon: FileText }
   ];
 
   const mainBenefits = [
     { 
-      title: "Generates MTBF Reports",
-      description: "Generates MTBF reports based on real stress, improving MTBF outcomes.",
-      icon: FileText
+      title: "Design Efficiency",
+      description: "Automates manual stress derating, saving engineering time and reducing human error.",
+      icon: Clock
     },
     { 
-      title: "Identifies Overstressed Components",
-      description: "Identifies overstressed components, providing actionable recommendations for adjustments.",
-      icon: Target
-    },
-    { 
-      title: "Ensures Robust Products",
-      description: "Ensures more robust products by pinpointing and resolving potential failure points, enhancing PCB quality.",
+      title: "Enhanced Reliability",
+      description: "Identifies overstressed components early, preventing field failures and design rework.",
       icon: Shield
     },
     { 
-      title: "Utilizes Central Design Data",
-      description: "Utilizes design data as a central repository for reliable information.",
-      icon: Database
+      title: "Faster Development",
+      description: "Shortens design‑validation loops by embedding analysis within ECAD tools.",
+      icon: TrendingUp
     },
     { 
-      title: "Real-Time Synchronization",
-      description: "Ensures real-time synchronization between electronic design modifications and BQR's automated analysis solutions.",
-      icon: Activity
+      title: "Cost Optimization",
+      description: "Highlights over‑designed or overweight components and suggests cost‑effective alternatives.",
+      icon: DollarSign
     },
     { 
       title: "Comprehensive Traceability",
-      description: "Achieves comprehensive traceability by linking analyses to the latest schematic version.",
+      description: "Ensures every analysis is linked to the latest schematic for verification and validation.",
       icon: Link2
     }
   ];
 
   const additionalBenefits = [
     {
-      title: "Control PCB Weight",
-      description: "Offers comprehensive component stress analysis, helping identify components that contribute to excess weight. Make informed decisions about alternatives that maintain performance while reducing overall PCB weight.",
+      title: "Reduces PCB Weight",
+      description: "Identifies components contributing to excess mass, enabling informed decisions for lighter alternatives without compromising performance.",
       icon: Weight
     },
     {
-      title: "Maximize Space Efficiency",
-      description: "Conducts thorough analyses to identify components that may take up more space than necessary. Optimize component selection early for better space utilization and more compact designs.",
+      title: "Improves Layout Efficiency",
+      description: "Reveals over‑sized or redundant parts before placement, optimizing component selection for better space utilization and more compact designs.",
       icon: Maximize2
     },
     {
-      title: "Tackle PCB Density Challenges",
-      description: "Addresses PCB density challenges by identifying over-designed components. Design change recommendations ensure your PCB is both compact and functional.",
+      title: "Solves PCB Density Challenges",
+      description: "Balances design compactness with thermal safety margins by identifying over-designed components and providing actionable recommendations.",
       icon: Layers
     },
     {
-      title: "Reduce Component Costs",
-      description: "Identifies overstressed components while providing insights into cost-effective alternatives. Lead to significant savings while maintaining quality and reliability.",
+      title: "Supports Cost Reduction",
+      description: "Enables intelligent component substitution without compromising reliability, leading to significant cost savings.",
       icon: DollarSign
     }
   ];
 
   const howItWorks = [
     {
-      title: "PCB-Focused Analysis",
-      description: "Specializes in PCB analysis—focuses on analyzing individual components within the PCB rather than traditional system-level tools.",
-      icon: Cpu
+      title: "Data Extraction",
+      description: "Synthelyzer® reads schematic and BOM data directly from ECAD tools.",
+      icon: Database
     },
     {
-      title: "Seamless Integration",
-      description: "Works effortlessly with leading ECAD software to facilitate in-workflow analysis and real-time updates.",
-      icon: Link2
+      title: "Stress & Thermal Analysis",
+      description: "Electrical parameters and thermal profiles are evaluated using fiXtress® models.",
+      icon: Activity
     },
     {
-      title: "Detailed Insights",
-      description: "Enables thorough analysis of potential failure points, ensuring precise predictions for PCB reliability.",
+      title: "Reliability Evaluation",
+      description: "MTBF, derating compliance, and FMECA links are automatically generated.",
+      icon: CheckCircle2
+    },
+    {
+      title: "Design Feedback",
+      description: "Results and recommendations are synchronized back to ECAD for real‑time design improvement.",
       icon: Lightbulb
     }
   ];
 
-  const additionalFeatures = [
+  const integrationTools = [
     {
-      category: "Data Collection & Analysis",
-      items: [
-        "Collects detailed PCB components data for CircuitHawk™ and fiXtress®",
-        "Performs PCB component derating lite",
-        "Calculates PCB MTBF based on MIL HDBK 217F2 and Telcordia 3",
-        "Generates Net name and Interface Control Document (ICD)",
-        "Assigns components to functions for FMEA/FMECA"
-      ]
+      name: "Synthelyzer®",
+      description: "Extracts schematic and component data from ECAD tools",
+      icon: Link2
     },
     {
-      category: "Traceability",
-      items: [
-        "Integrated Analysis Alignment: Seamlessly aligns analysis with design updates",
-        "Efficient Decision Support: Direct connection between analyses and real-time ECAD modifications"
-      ]
+      name: "fiXtress®",
+      description: "Performs detailed electrical and thermal stress analysis",
+      icon: Activity
     },
     {
-      category: "Enhanced Reliability",
-      items: [
-        "Seamless integration ensures modifications are reflected accurately",
-        "Clear traceability streamlines decision-making processes",
-        "Provides more realistic MTBF estimations based on real component stress",
-        "Identifies potential failure points for robust and reliable products"
-      ]
+      name: "CARE® Suite",
+      description: "Consolidates RAMS results (FMEA, FTA, RBD, MTTR) for system‑level decision support",
+      icon: Layers
     }
   ];
 
@@ -153,13 +137,17 @@ const SynthelyzerPage = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto text-center animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Synthelyzer™ ECAD Plugin:{" "}
                 <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                  Automate Electrical Stress Analysis & MTBF Prediction
+                  Automate PCB Electrical Stress, Components Derating & MTBF Analysis
                 </span>
+                <br />
+                Right Inside Your ECAD
               </h1>
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Real-time analysis during board design within Altium, OrCAD, and Siemens EDA
+              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-4">
+                Synthelyzer® ECAD Plug‑In empowers design and reliability engineers to identify overstressed components, hidden design errors, optimize derating, and predict MTBF directly within Altium®, OrCAD® and Siemens-Xpedition.
+              </p>
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+                It connects design data with BQR's fiXtress® analytics engine and CARE RAMS suite, providing real‑time, Shift‑Left reliability insights that shorten design cycles and enhance product robustness.
               </p>
             </div>
           </div>
@@ -215,7 +203,7 @@ const SynthelyzerPage = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                 {mainBenefits.map((benefit, index) => {
                   const Icon = benefit.icon;
                   return (
@@ -285,19 +273,22 @@ const SynthelyzerPage = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {howItWorks.map((item, index) => {
                   const Icon = item.icon;
                   return (
                     <Card 
                       key={index} 
-                      className="border-2 hover:shadow-xl transition-all duration-300 hover-scale"
+                      className="border-2 hover:shadow-xl transition-all duration-300 hover-scale relative"
                     >
-                      <CardContent className="p-8 text-center">
-                        <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                          <Icon className="w-8 h-8 text-primary" />
+                      <CardContent className="p-6">
+                        <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+                          <span className="text-sm font-bold text-primary">{index + 1}</span>
                         </div>
-                        <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                          <Icon className="w-6 h-6 text-primary" />
+                        </div>
+                        <h3 className="text-lg font-bold mb-2">{item.title}</h3>
                         <p className="text-sm text-muted-foreground leading-relaxed">
                           {item.description}
                         </p>
@@ -310,44 +301,48 @@ const SynthelyzerPage = () => {
           </div>
         </section>
 
-        {/* Additional Features Section */}
+        {/* Integration with BQR's Toolchain */}
         <section className="py-20 bg-gradient-to-b from-muted/10 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Additional Features</h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Comprehensive capabilities for complete design analysis
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Integration with BQR's Toolchain
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                  Synthelyzer® operates as part of BQR's integrated CARE reliability ecosystem, providing a digital‑twin reliability workflow from schematic to maintenance optimization.
                 </p>
               </div>
 
-              <div className="space-y-6">
-                {additionalFeatures.map((section, index) => (
-                  <Card 
-                    key={index} 
-                    className="border-2 hover:shadow-lg transition-all duration-300"
-                  >
-                    <CardContent className="p-0">
-                      <div className="bg-gradient-to-r from-primary/20 to-primary/10 p-6 border-b">
-                        <h3 className="text-xl font-bold flex items-center gap-2">
-                          <CheckCircle2 className="w-6 h-6 text-primary" />
-                          {section.category}
-                        </h3>
-                      </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
-                          {section.items.map((item, itemIndex) => (
-                            <li key={itemIndex} className="flex items-start gap-3 group">
-                              <Zap className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                              <span className="text-sm leading-relaxed">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
+              <div className="grid md:grid-cols-3 gap-6">
+                {integrationTools.map((tool, index) => {
+                  const Icon = tool.icon;
+                  return (
+                    <Card 
+                      key={index} 
+                      className="border-2 border-primary/20 hover:shadow-xl transition-all duration-300 hover-scale bg-gradient-to-br from-background to-accent/5"
+                    >
+                      <CardContent className="p-8 text-center">
+                        <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                          <Icon className="w-8 h-8 text-primary" />
+                        </div>
+                        <h3 className="text-xl font-bold mb-3">{tool.name}</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {tool.description}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
+
+              <Card className="mt-8 border-2 border-primary/30 bg-gradient-to-br from-background to-primary/5">
+                <CardContent className="p-8 text-center">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Together, these tools provide a <span className="text-primary font-semibold">digital‑twin reliability workflow</span> from schematic to maintenance optimization.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -365,15 +360,14 @@ const SynthelyzerPage = () => {
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Ready to Transform Your PCB Design Process?
+                Get Started
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
-                Synthelyzer™ integrates directly into your ECAD workflow, providing real-time stress analysis 
-                and reliability predictions. Design with confidence and eliminate costly failures before they happen.
+                Experience the future of ECAD reliability. Watch the Synthelyzer® demo video or request a live presentation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="font-semibold text-base px-8 hover-scale">
-                  Get Started with Synthelyzer™
+                  Request Live Demo
                 </Button>
                 <Button size="lg" variant="outline" className="font-semibold text-base px-8 hover-scale">
                   Watch Demo Video
