@@ -189,57 +189,8 @@ const SynthelyzerPage = () => {
           </div>
         </section>
 
-        {/* Video Section */}
-        <section className="py-20 bg-gradient-to-b from-muted/10 to-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  A Closer Look at Synthelyzer
-                </h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  See how Synthelyzer® transforms PCB design reliability
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8 items-start">
-                {/* Video Placeholder */}
-                <Card className="border-2 border-primary/30 overflow-hidden hover:shadow-2xl transition-all duration-300">
-                  <div className="relative aspect-video bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center group cursor-pointer">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
-                    <div className="relative z-10 text-center">
-                      <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <svg className="w-10 h-10 text-primary-foreground ml-1" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
-                        </svg>
-                      </div>
-                      <p className="text-sm font-semibold text-muted-foreground">Watch Demo Video</p>
-                    </div>
-                  </div>
-                </Card>
-
-                {/* Analysis Example Image */}
-                <Card className="border-2 border-primary/30 overflow-hidden hover:shadow-2xl transition-all duration-300">
-                  <CardContent className="p-0">
-                    <img 
-                      src={analysisExample} 
-                      alt="Synthelyzer schematic analysis example showing stress ratings, MTBF predictions, and component recommendations" 
-                      className="w-full h-full object-cover"
-                    />
-                  </CardContent>
-                  <CardContent className="p-4 bg-gradient-to-br from-background to-primary/5">
-                    <p className="text-sm text-muted-foreground text-center">
-                      Real-time analysis with stress ratings, MTBF predictions, and design recommendations
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Main Benefits Section */}
-        <section className="py-20 bg-gradient-to-b from-background to-muted/10">
+        <section className="py-20 bg-gradient-to-b from-muted/10 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
@@ -308,6 +259,55 @@ const SynthelyzerPage = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Video Section */}
+        <section className="py-20 bg-gradient-to-b from-background to-muted/10">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  A Closer Look at Synthelyzer
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  See how Synthelyzer® transforms PCB design reliability
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 items-start">
+                {/* Video Placeholder */}
+                <Card className="border-2 border-primary/30 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                  <div className="relative aspect-video bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center group cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
+                    <div className="relative z-10 text-center">
+                      <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg className="w-10 h-10 text-primary-foreground ml-1" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                      <p className="text-sm font-semibold text-muted-foreground">Watch Demo Video</p>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Analysis Example Image */}
+                <Card className="border-2 border-primary/30 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                  <CardContent className="p-0">
+                    <img 
+                      src={analysisExample} 
+                      alt="Synthelyzer schematic analysis example showing stress ratings, MTBF predictions, and component recommendations" 
+                      className="w-full h-full object-cover"
+                    />
+                  </CardContent>
+                  <CardContent className="p-4 bg-gradient-to-br from-background to-primary/5">
+                    <p className="text-sm text-muted-foreground text-center">
+                      Real-time analysis with stress ratings, MTBF predictions, and design recommendations
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </section>
